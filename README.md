@@ -1,22 +1,36 @@
+# Workshop website ✨
+
+This project is a **Next.js** web application for listing and filtering workshops or events. Users can browse, search, and filter workshops, with each event linking to an external **Instagram post** for more details. The application is designed with a user-friendly interface and responsive layout.
+
+## Features 📋
+- **Homepage** displaying available workshops
+- **Filter Bar** for searching by date and other criteria
+- **Navigation Bar** with links to "Workshops" and "Vereine" (Clubs/Associations)
+- **Responsive Design** for an optimal experience on all devices
+- **External Links** to real Instagram posts (with creator permission)
+
+## Tech Stack ⚙️
+- **Next.js** – React-based framework for SSR & SSG
+- **TypeScript** – Strongly typed JavaScript
+- **Prisma** – Database ORM for data management
+- **React Toastify** – User-friendly notifications
+- **CSS** – Styling for the UI
+
+## Deployment 🌐
+This project is deployed on Vercel, you can try it out directly in your browser here: Visite Webapp
+
+## License 📜
+© 2024-2025 Workshops. All rights reserved. The content and images link to external Instagram posts with permission from the creators.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+-------------
+-------------
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load Inter, a custom Google Font.
 
