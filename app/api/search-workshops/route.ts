@@ -1,11 +1,10 @@
 import prisma from "@/prisma/db";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(req: {
-  nextUrl: { searchParams: { searchTerm: string } };
-}) {
-  // Lese den Suchbegriff aus den URL-Parameter
-  const { searchTerm } = req.nextUrl.searchParams;
+export async function GET(req: NextRequest) {
+  // Lese den Suchbegriff aus den URL-Parametern
+  const { searchParams } = new URL(req.url);
+  const searchTerm = searchParams.get("searchTerm") || "";
 
   // Führe eine Abfrage auf der "workshop"-Tabelle durch
   const workshops = await prisma.workshop.findMany({
