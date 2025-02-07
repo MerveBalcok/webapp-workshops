@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/components/FilterBar.tsx"],"sourcesContent":["// components/FilterBar.tsx\n\"use client\";\nimport { useState } from \"react\";\nimport \"../css/components/filterbar.css\";\n\nexport default function FilterBar({ onSearch }) {\n  const [searchTerm, setSearchTerm] = useState(\"\");\n\n  const handleSearch = () => {\n    if (searchTerm.length >= 2) {\n      onSearch(searchTerm); // Callback-Funktion wird aufgerufen, wenn die Eingabe mindestens 2 Zeichen hat\n    }\n  };\n\n  return (\n    <div className=\"filter-bar\">\n      <input\n        type=\"text\"\n        placeholder=\"Suche nach Workshops...\"\n        value={searchTerm}\n        onChange={(e) => setSearchTerm(e.target.value)}\n        className=\"search-input\"\n      />\n      <button className=\"search-button\" onClick={handleSearch}>\n        Suche\n      </button>\n    </div>\n  );\n}\n"],"names":[],"mappings":"AAAA,2BAA2B;;;;;;;;;AAC3B;;;AAIe,SAAS,UAAU,EAAE,QAAQ,EAAE;;IAC5C,MAAM,CAAC,YAAY,cAAc,GAAG,CAAA,GAAA,6JAAA,CAAA,WAAQ,AAAD,EAAE;IAE7C,MAAM,eAAe;QACnB,IAAI,WAAW,MAAM,IAAI,GAAG;YAC1B,SAAS,aAAa,+EAA+E;QACvG;IACF;IAEA,qBACE,6LAAC;QAAI,WAAU;;0BACb,6LAAC;gBACC,MAAK;gBACL,aAAY;gBACZ,OAAO;gBACP,UAAU,CAAC,IAAM,cAAc,EAAE,MAAM,CAAC,KAAK;gBAC7C,WAAU;;;;;;0BAEZ,6LAAC;gBAAO,WAAU;gBAAgB,SAAS;0BAAc;;;;;;;;;;;;AAK/D;GAvBwB;KAAA"}},
+    {"offset": {"line": 59, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

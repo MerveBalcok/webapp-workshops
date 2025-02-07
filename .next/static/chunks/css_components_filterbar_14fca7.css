@@ -1,0 +1,30 @@
+/* [project]/css/components/filterbar.css [app-client] (css) */
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  padding: 10px;
+  width: 300px;
+}
+
+.search-button {
+  border: 1px solid #a2bcdc;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.search-button, .search-button:hover {
+  background-color: #a2bcdc;
+}
+
+
+/*# sourceMappingURL=css_components_filterbar_14fca7.css.map*/

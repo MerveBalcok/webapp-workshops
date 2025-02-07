@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/page.tsx"],"sourcesContent":["import { redirect } from \"next/navigation\"; // Next.js v13+ unterstützt redirect auf dem Server\nimport prisma from \"../../../prisma/db\";\n\nexport default async function WorkshopDetail({\n  params,\n}: {\n  params: { id: string };\n}) {\n  const { id } = params;\n  const workshop = await prisma.workshop.findUnique({\n    where: { id: parseInt(id, 10) },\n    include: {\n      Verein: true, // Verein-Daten mit einbeziehen\n    },\n  });\n\n  const instagramUrl =\n    workshop?.instagramPostUrl ||\n    workshop?.Verein?.instagramProfileUrl ||\n    \"https://instagram.com\"; // Fallback auf Instagram-Profil\n\n  redirect(instagramUrl); // Führt eine Server-seitige Weiterleitung durch\n}\n"],"names":[],"mappings":";;;;;;;;;;;;AAGe,eAAe,eAAe,EAC3C,MAAM,EAGP;IACC,MAAM,EAAE,EAAE,EAAE,GAAG;IACf,MAAM,WAAW,MAAM,OAAO,QAAQ,CAAC,UAAU,CAAC;QAChD,OAAO;YAAE,IAAI,SAAS,IAAI;QAAI;QAC9B,SAAS;YACP,QAAQ;QACV;IACF;IAEA,MAAM,eACJ,UAAU,oBACV,UAAU,QAAQ,uBAClB,yBAAyB,gCAAgC;IAE3D,CAAA,GAAA,qIAAA,CAAA,WAAQ,AAAD,EAAE,eAAe,gDAAgD;AAC1E;KAnB8B"}},
+    {"offset": {"line": 33, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 41, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO"}},
+    {"offset": {"line": 42, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

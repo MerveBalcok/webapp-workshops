@@ -1,0 +1,28 @@
+/* [project]/css/components/vereine.css [app-ssr] (css) */
+.vereine-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.vereine-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.verein-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  width: 300px;
+}
+
+.verein-avatar {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+/*# sourceMappingURL=css_components_vereine_31ffea.css.map*/

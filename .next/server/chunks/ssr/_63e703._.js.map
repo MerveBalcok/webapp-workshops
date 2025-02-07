@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/components/FilterBar.tsx"],"sourcesContent":["\"use client\";\n// components/FilterBar.tsx\nimport { useState } from \"react\";\nimport \"@/css/filterbar.css\"; // Importiere spezifische Stile für die FilterBar\n\nexport default function FilterBar() {\n  const [searchTerm, setSearchTerm] = useState(\"\");\n\n  const handleSearch = (e) => {\n    setSearchTerm(e.target.value);\n  };\n\n  return (\n    <div className=\"filter-bar\">\n      <input\n        type=\"text\"\n        placeholder=\"Search Workshops...\"\n        value={searchTerm}\n        onChange={handleSearch}\n        className=\"search-input\"\n      />\n      <button className=\"search-button\">Search</button>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAA;;;;AAKe,SAAS;IACtB,MAAM,CAAC,YAAY,cAAc,GAAG,CAAA,GAAA,+MAAA,CAAA,WAAQ,AAAD,EAAE;IAE7C,MAAM,eAAe,CAAC;QACpB,cAAc,EAAE,MAAM,CAAC,KAAK;IAC9B;IAEA,qBACE,wPAAC;QAAI,WAAU;;0BACb,wPAAC;gBACC,MAAK;gBACL,aAAY;gBACZ,OAAO;gBACP,UAAU;gBACV,WAAU;;;;;;0BAEZ,wPAAC;gBAAO,WAAU;0BAAgB;;;;;;;;;;;;AAGxC"}},
+    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 57, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/node_modules/next/src/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["unable to read source [project]/node_modules/next/src/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,yIAAiCC,QAAQ,CACxD,YACD,CAACC,kBAAkB"}},
+    {"offset": {"line": 59, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

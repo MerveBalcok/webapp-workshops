@@ -1,0 +1,230 @@
+/* [project]/css/components/workshopCard.css [app-client] (css) */
+.workshops-grid {
+  display: grid;
+  grid-gap: 20px;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+.workshop-card {
+  aspect-ratio: 3 / 4;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #0000001a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 300px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.workshop-image {
+  border-bottom: 1px solid #ccc;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+.workshop-title-container {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 4rem;
+  padding: 0 1.5rem;
+}
+
+.workshop-title {
+  color: #000;
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.workshop-avatar {
+  border-radius: 50%;
+  height: 40px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 40px;
+}
+
+.workshop-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date, .location, .price {
+  flex: 1;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (width >= 480px) {
+  .workshops-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 768px) {
+  .workshops-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width >= 1200px) {
+  .workshops-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .workshop-card {
+    flex: calc(25% - 20px);
+    max-width: none;
+  }
+}
+
+@media (width <= 480px) {
+  .workshop-card {
+    max-width: 100%;
+  }
+}
+
+
+/* [project]/css/components/filterbar.css [app-client] (css) */
+.filter-bar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.filter-date, .search-input {
+  margin: 5px;
+}
+
+.search-input {
+  max-width: 100%;
+  width: 15rem;
+}
+
+.filter-date, .search-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.filter-date {
+  color: #848484;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-button, .search-button {
+  background-color: #92accd;
+  border: 1px solid #92accd;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  margin: 5px;
+  padding: 10px 20px;
+  transition: background-color .3s, transform .2s;
+}
+
+.search-button:hover {
+  background-color: #3b74ad;
+  transform: scale(1.05);
+}
+
+.reset-button {
+  background-color: #f39a70;
+}
+
+.reset-button:hover {
+  background-color: #ce7044;
+  transform: scale(1.05);
+}
+
+@media (width <= 700px) {
+  .filter-date, .search-input {
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .reset-button, .search-button {
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+
+
+/* [project]/css/components/page.css [app-client] (css) */
+.hero-section {
+  background-image: url("/img/background.png");
+  background-position: 50%;
+  background-size: cover;
+  height: 70vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100vw;
+}
+
+.hero-section, .overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay {
+  background: #fffc;
+  border-radius: 10px;
+  flex-direction: column;
+  height: auto;
+  left: 50%;
+  max-width: 600px;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 10;
+}
+
+.filter-container {
+  margin-top: 20px;
+}
+
+.workshops-count {
+  color: #666;
+  font-size: 1rem;
+  margin: 1rem 0 0 1.5rem;
+}
+
+
+/*# sourceMappingURL=css_components_c23e4b._.css.map*/

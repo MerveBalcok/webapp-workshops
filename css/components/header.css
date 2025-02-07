@@ -1,0 +1,32 @@
+/* Header Styling */
+.site-header {
+  background-color: rgb(146, 172, 205);
+  color: white;
+  padding: 0.5rem; /* Erhöht das Padding oben und unten sowie an den Seiten */
+  position: -webkit-sticky; /* Für Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Stellt sicher, dass die Navigation über anderen Inhalten liegt */
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links .nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem; /* Padding für den Link, ohne beim Hover zu vergrößern */
+  transition: background-color 0.3s ease; /* Sanfte Farbänderung beim Hover */
+  border-radius: 5px; /* Abgerundete Ecken */
+}
+
+.nav-links .nav-link:hover {
+  background-color: rgb(105, 141, 185); /* Helleres Blau beim Hover */
+}

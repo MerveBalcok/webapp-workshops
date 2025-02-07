@@ -1,0 +1,10 @@
+/* styles/toast.css */
+.Toastify__toast-container {
+  font-size: 16px;
+}
+.Toastify__toast--error {
+  background: #f44336; /* Beispiel für Fehlerhintergrund */
+}
+.Toastify__toast--success {
+  background: #4caf50; /* Beispiel für Erfolgshintergrund */
+}

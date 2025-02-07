@@ -1,0 +1,43 @@
+/* css/page.css */
+.hero-section {
+  width: 100vw; /* Volle Breite des Viewports */
+  height: 70vh; /* 70% der Höhe des Viewports */
+  background-image: url("/img/background.png");
+  background-size: cover; /* Bild deckt die gesamte Fläche ab */
+  background-position: center; /* Bild wird zentriert */
+  position: relative; /* Ermöglicht Positionierung der Overlay */
+  margin: 0; /* Kein zusätzlicher Rand */
+  padding: 0; /* Kein zusätzliches Padding */
+  display: flex;
+  align-items: center; /* Zentrieren in der Vertikalen */
+  justify-content: center; /* Zentrieren in der Horizontalen */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  height: auto; /* Höhe automatisch an den Inhalt anpassen */
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-container {
+  margin-top: 20px; /* Abstand zwischen Titel und FilterBar */
+}
+
+.workshops-count {
+  font-size: 1rem;
+  margin: 1rem 0 0 1.5rem;
+  color: #666;
+}

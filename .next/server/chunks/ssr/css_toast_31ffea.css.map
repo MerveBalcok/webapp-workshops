@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["[project]/css/toast.css"],"sourcesContent":[".Toastify__toast-container{font-size:16px}.Toastify__toast--error{background:#f44336}.Toastify__toast--success{background:#4caf50}"],"names":[],"mappings":"AAAA;;;;AAA0C;;;;AAA2C"}},
+    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

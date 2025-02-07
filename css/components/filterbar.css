@@ -1,0 +1,89 @@
+/* styles/filterbar.css */
+
+/* Allgemeine Stile für FilterBar */
+.filter-bar {
+  display: flex;
+  flex-direction: column; /* Layout von oben nach unten */
+  align-items: center; /* Zentriert die Inhalte horizontal */
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap; /* Ermöglicht das Umfließen bei kleinen Bildschirmen */
+  justify-content: center;
+  margin-bottom: 5px; /* Abstand zwischen Eingabefeldern und Buttons */
+}
+
+.search-input,
+.filter-date {
+  margin: 5px; /* Abstand zwischen den Eingabefeldern */
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 15rem;
+  max-width: 100%;
+}
+
+.filter-date {
+  padding: 10px;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #848484;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.search-button,
+.reset-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid rgb(146, 172, 205);
+  background-color: rgb(146, 172, 205);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 5px; /* Abstand zwischen den Buttons */
+}
+
+.search-button:hover {
+  background-color: #3b74ad;
+  transform: scale(1.05);
+}
+
+.reset-button {
+  background-color: #f39a70; /* orange für den Reset-Button */
+}
+
+.reset-button:hover {
+  background-color: #ce7044; /* Dunkleres orange für den Hover-Effekt */
+  transform: scale(1.05);
+}
+
+/* Media Queries für responsives Design */
+@media (max-width: 700px) {
+  .search-input,
+  .filter-date {
+    width: 100%; /* Eingabefelder nehmen die volle Breite ein */
+    border-radius: 5px; /* Ecken für kleine Bildschirme */
+  }
+
+  .search-button,
+  .reset-button {
+    width: 100%; /* Buttons nehmen ebenfalls die volle Breite ein */
+    border-radius: 5px; /* Ecken für kleine Bildschirme */
+    margin-top: 5px; /* Abstand oben für Buttons */
+  }
+}

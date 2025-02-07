@@ -1,0 +1,102 @@
+/* [project]/css/components/workshopCard.css [app-ssr] (css) */
+.workshops-grid {
+  display: grid;
+  grid-gap: 20px;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+.workshop-card {
+  aspect-ratio: 3 / 4;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #0000001a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 300px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.workshop-image {
+  border-bottom: 1px solid #ccc;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+.workshop-title-container {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 4rem;
+  padding: 0 1.5rem;
+}
+
+.workshop-title {
+  color: #000;
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.workshop-avatar {
+  border-radius: 50%;
+  height: 40px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 40px;
+}
+
+.workshop-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date, .location, .price {
+  flex: 1;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (width >= 480px) {
+  .workshops-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 768px) {
+  .workshops-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width >= 1200px) {
+  .workshops-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .workshop-card {
+    flex: calc(25% - 20px);
+    max-width: none;
+  }
+}
+
+@media (width <= 480px) {
+  .workshop-card {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=css_components_workshopCard_31ffea.css.map*/

@@ -1,0 +1,30 @@
+/* css/components/vereine.css */
+.vereine-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.vereine-list {
+  display: flex;
+  flex-wrap: wrap; /* Zeilenumbruch bei Bedarf */
+  justify-content: center;
+}
+
+/* Karte für jeden Verein */
+.verein-card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center; /* Zentriert den Text innerhalb der Karte */
+  width: 300px;
+}
+
+/* Avatar des Vereins */
+.verein-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* Note: Avatar Hover wird vermutlicherweise vom Header beeinflusst, später prüfen.  */

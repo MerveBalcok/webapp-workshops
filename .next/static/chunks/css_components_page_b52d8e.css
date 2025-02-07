@@ -1,0 +1,45 @@
+/* [project]/css/components/page.css [app-client] (css) */
+.hero-section {
+  background-image: url("/img/background.png");
+  background-position: 50%;
+  background-size: cover;
+  height: 70vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100vw;
+}
+
+.hero-section, .overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay {
+  background: #fffc;
+  border-radius: 10px;
+  flex-direction: column;
+  height: auto;
+  left: 50%;
+  max-width: 600px;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 10;
+}
+
+.filter-container {
+  margin-top: 20px;
+}
+
+.workshops-count {
+  color: #666;
+  font-size: 1rem;
+  margin: 1rem 0 0 1.5rem;
+}
+
+/*# sourceMappingURL=css_components_page_b52d8e.css.map*/

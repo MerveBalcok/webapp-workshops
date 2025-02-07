@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["[project]/css/components/footer.css"],"sourcesContent":[".site-footer{background-color:#333;bottom:0;color:#fff;padding:10px 0;position:relative;text-align:center;width:100%}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -1,0 +1,32 @@
+/* [project]/css/components/header.css [app-ssr] (css) */
+.site-header {
+  background-color: #92accd;
+  color: #fff;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links .nav-link {
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.nav-links .nav-link:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=css_components_header_31ffea.css.map*/

@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["[project]/css/components/header.css"],"sourcesContent":[".site-header{background-color:#a3bcdc;color:#fff;padding:5px}.nav-links{display:flex;justify-content:space-around;list-style-type:none}.nav-links a{color:#fff;-webkit-text-decoration:none;text-decoration:none}.nav-links a:hover{-webkit-text-decoration:underline;text-decoration:underline}"],"names":[],"mappings":"AAAA;;;;;;AAA6D;;;;;;AAA0E;;;;;;AAA0E"}},
+    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"sources":["[project]/css/components/footer.css"],"sourcesContent":[".site-footer{background-color:#333;bottom:0;color:#fff;padding:10px 0;position:relative;text-align:center;width:100%}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

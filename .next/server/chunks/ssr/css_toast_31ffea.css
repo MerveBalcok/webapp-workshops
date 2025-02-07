@@ -1,0 +1,14 @@
+/* [project]/css/toast.css [app-ssr] (css) */
+.Toastify__toast-container {
+  font-size: 16px;
+}
+
+.Toastify__toast--error {
+  background: #f44336;
+}
+
+.Toastify__toast--success {
+  background: #4caf50;
+}
+
+/*# sourceMappingURL=css_toast_31ffea.css.map*/

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["[project]/css/components/header.css"],"sourcesContent":[".site-header{background-color:#92accd;color:#fff;padding:5px;position:sticky;top:0;z-index:1000}.nav-links{display:flex;justify-content:space-around;list-style-type:none}.nav-links li{margin:0}.nav-links .nav-link{color:#fff;-webkit-text-decoration:none;text-decoration:none}.nav-links .nav-link:hover{-webkit-text-decoration:underline;text-decoration:underline}"],"names":[],"mappings":"AAAA;;;;;;;;;AAAgG;;;;;;AAA0E;;;;AAAuB;;;;;;AAAkF"}},
+    {"offset": {"line": 30, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
