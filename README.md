@@ -17,7 +17,7 @@ This project is a **Next.js** web application for listing and filtering workshop
 - **CSS** – Styling for the UI
 
 ## Deployment 🌐
-This project is deployed on Vercel, you can try it out directly in your browser here: Visite Webapp
+This project is deployed on Vercel, you can try it out directly in your browser here: [Visite Webapp](https://webapp-workshops.vercel.app/)
 
 ## License 📜
 © 2024-2025 Workshops. All rights reserved. The content and images link to external Instagram posts with permission from the creators.
