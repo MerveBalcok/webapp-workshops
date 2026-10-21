@@ -110,7 +110,7 @@ export default function Home() {
           </p>
         </div>
         {loading ? (
-          <p>Lade Workshops...</p>
+          <p>Workshops werden geladen. Das kann einen Moment dauern. Vielen Dank für deine Geduld!</p>
         ) : error ? (
           <p className="error-message">{error}</p> // Anzeige der Fehlermeldung im UI
         ) : (
